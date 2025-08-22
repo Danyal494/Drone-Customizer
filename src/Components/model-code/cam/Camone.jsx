@@ -3,7 +3,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Cameone(props) {
-  const { nodes, materials } = useGLTF('/public/model/cam/Cam1.gltf')
+  const { nodes, materials } = useGLTF('/model/cam/Cam1.gltf')
   return (
     <group {...props} dispose={null}>
       <group position={[-0.028, -0.294, 0.809]} rotation={[-Math.PI / 2, 0, 0]} scale={1.221}>
@@ -36,4 +36,4 @@ export function Cameone(props) {
   )
 }
 
-useGLTF.preload('/public/model/cam/Cam1.gltf')
+useGLTF.preload('/model/cam/Cam1.gltf')

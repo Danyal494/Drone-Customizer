@@ -3,7 +3,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function CamTwo(props) {
-  const { nodes, materials } = useGLTF('/public/model/cam/Cam2.gltf')
+  const { nodes, materials } = useGLTF('/model/cam/Cam2.gltf')
   return (
     <group {...props} dispose={null}>
       <group position={[-0.037, -0.311, 0.9]} rotation={[-Math.PI / 2, 0, 0]}>
@@ -36,4 +36,4 @@ export function CamTwo(props) {
   )
 }
 
-useGLTF.preload('/public/model/cam/Cam2.gltf')
+useGLTF.preload('/model/cam/Cam2.gltf')

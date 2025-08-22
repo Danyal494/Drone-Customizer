@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Base(props) {
-  const { nodes, materials } = useGLTF('/public/model/base/Base.gltf')
+  const { nodes, materials } = useGLTF('/model/base/Base.gltf')
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -285,4 +285,4 @@ export function Base(props) {
   )
 }
 
-useGLTF.preload('/public/model/base/Base.gltf')
+useGLTF.preload('/model/base/Base.gltf')

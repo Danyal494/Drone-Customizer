@@ -3,7 +3,7 @@ import React from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Heliceone({ color = "#ff0000", ...props }) {
-  const { nodes } = useGLTF('/public/model/helices/Helice1.gltf')
+  const { nodes } = useGLTF('/model/helices/Helice1.gltf')
   
   return (
     <group {...props} dispose={null}>
@@ -38,4 +38,4 @@ export function Heliceone({ color = "#ff0000", ...props }) {
   )
 }
 
-useGLTF.preload('/public/model/helices/Helice1.gltf')
+useGLTF.preload('/model/helices/Helice1.gltf')

@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Motortwo({ color = "#ff0000", ...props }) {
-  const { nodes, materials } = useGLTF('/public/model/motor/Motor2.gltf')
+  const { nodes, materials } = useGLTF('/model/motor/Motor2.gltf')
   return (
     <group {...props} dispose={null}>
       <group position={[-0.02, 0.293, -0.112]}>
@@ -25,4 +25,4 @@ export function Motortwo({ color = "#ff0000", ...props }) {
   )
 }
 
-useGLTF.preload('/public/model/motor/Motor2.gltf')
+useGLTF.preload('/model/motor/Motor2.gltf')
